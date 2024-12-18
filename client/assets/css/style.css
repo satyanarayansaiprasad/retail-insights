@@ -5,6 +5,7 @@
   
     /* Color Variables */
     --color-darkBlue: #021A2A; 
+    --color-darkBlueTransparent: #02bfc212; 
     --color-lightBlue: #02BFC2; 
     --color-white: #FFFFFF;
     --color-toBtm: linear-gradient(to bottom, #021A2A, #02BFC2);
@@ -17,7 +18,7 @@
     --spacing-large: 2rem;
   
     /* Border Radius */
-    --border-radius: 0.25rem;
+    --border-radius: 1rem;
   
     /* Shadow Variables */
     --box-shadow: 0px 4px 6px rgba(2, 191, 194, 0.6), 0px 1px 3px rgba(2, 191, 194, 0.4);
@@ -50,9 +51,56 @@ a:hover{
 }
 
 
-
-
 /* footer section */
-.footer :where(.form-control, .btn){
-    border-radius: 0 !important;
+footer{
+    background: var(--color-darkBlue) !important;
 }
+
+.newsleInput{
+    padding-right: 0 !important;
+}
+
+.newsleBtn{
+    padding-left: 0 !important;
+}
+
+footer .bookDemo{
+    background-color: var(--color-lightBlue);
+}
+
+footer .bookDemo:hover{
+    background: var(--color-toRight);
+}
+
+footer h1{
+    margin-bottom: var(--spacing-medium) !important;
+    color: var(--color-lightBlue) !important;
+    font-size: 3rem;
+}
+
+footer h3{
+    margin-bottom: var(--spacing-large) !important;
+    color: var(--color-lightBlue) !important;
+}
+
+footer h4{
+    color: var(--color-lightBlue) !important;
+}
+
+footer form{
+    background-color: var(--color-darkBlueTransparent);
+    border-radius: var(--border-radius);
+}
+
+footer .form-control{
+    border-radius: 0 !important;
+    padding-right: 0 !important;
+}
+
+footer form .btn{
+    border-radius: 0 !important;
+    background-color: var(--color-lightBlue);
+}
+
+
+/* mobile responsive */
