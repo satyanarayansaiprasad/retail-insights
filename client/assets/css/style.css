@@ -50,6 +50,33 @@ a:hover{
     color: var(--color-darkBlue);
 }
 
+/* navbar section */
+.navbar{
+    background-color: var(--color-darkBlue) !important;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav .nav-link.active {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    text-decoration-thickness: 4px;
+    text-decoration-color: var(--color-lightBlue)
+}
+
+.navbar-brand{
+    color: var(--color-white) !important;
+}
+
+.nav-link{
+    color: var(--color-white) !important;
+}
+
+.navbar-toggler{
+    background-color: var(--color-lightBlue) !important;
+}
 
 /* footer section */
 footer{
@@ -104,3 +131,64 @@ footer form .btn{
 
 
 /* mobile responsive */
+
+
+
+/* Footer section */
+@media (max-width: 1024px) {
+    footer form {
+        padding: var(--spacing-small);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .newsleInput,
+    footer .newsleBtn {
+        padding: 0 !important;
+        width: 100%;
+        margin-bottom: var(--spacing-small);
+    }
+
+    footer .form-control {
+        width: 100%;
+        margin: var(--spacing-small) 0;
+    }
+
+    footer form .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    footer form {
+        padding: var(--spacing-small);
+    }
+
+    footer h3.fs-1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    footer .newsleInput,
+    footer .newsleBtn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    footer h3.fs-1 {
+        font-size: 1.5rem;
+    }
+
+    footer .form-control {
+        font-size: 0.875rem;
+        padding: var(--spacing-small);
+    }
+
+    footer form .btn {
+        font-size: 0.875rem;
+        padding: var(--spacing-small);
+    }
+}
