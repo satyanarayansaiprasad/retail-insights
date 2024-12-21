@@ -8,7 +8,7 @@
                     Elevate Omni-Channel Success.
                 </p>
 
-                <a href="#" class="btn btn-lg text-light bookDemo px-5 mt-5">Book Demo</a>
+                <a href="#" class="btn btn-lg text-light bookDemo px-4 mt-5">Book Demo</a>
             </div>
             <div class="col-lg-6">
                 <h3>Locate <span class="text-light">Us</span></h3>

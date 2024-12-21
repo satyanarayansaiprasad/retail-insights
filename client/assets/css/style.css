@@ -8,6 +8,7 @@
     --color-darkBlueTransparent: #02bfc212; 
     --color-lightBlue: #02BFC2; 
     --color-white: #FFFFFF;
+    --color-darkBg: #253139;
     --color-toBtm: linear-gradient(to bottom, #021A2A, #02BFC2);
     --color-toRight: linear-gradient(to right, #021A2A, #02BFC2);
 
@@ -21,7 +22,7 @@
     --border-radius: 1rem;
   
     /* Shadow Variables */
-    --box-shadow: 0px 4px 6px rgba(2, 191, 194, 0.6), 0px 1px 3px rgba(2, 191, 194, 0.4);
+    --box-shadow: 0px 4px 6px rgba(2, 200, 200, 0.6), 0px 1px 3px rgba(2, 191, 194, 0.4);
 
     /* Transition Variables */
     --transition: all 0.3s ease-in-out;
@@ -48,6 +49,41 @@ a{
 
 a:hover{
     color: var(--color-darkBlue);
+}
+
+h1{
+    color: var(--color-lightBlue) !important;
+    letter-spacing: 2px !important;
+}
+
+/* scrollbar chnages */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-lightBlue);
+    border-radius: 10px; 
+}
+
+/* custom button css */
+.bookDemo{
+    background-color: var(--color-lightBlue) !important;
+}
+
+.bookDemo:hover{
+    background: var(--color-toRight) !important;
+}
+
+.contactUs{
+    background-color: transparent !important; 
+    border-color: var(--color-lightBlue) !important;
+    color: var(--color-lightBlue) !important;  
+}
+
+.contactUs:hover{
+    background: var(--color-toRight) !important;    /* Blue background on hover */
+    color: white !important;
 }
 
 /* navbar section */
@@ -78,6 +114,211 @@ a:hover{
     background-color: var(--color-lightBlue) !important;
 }
 
+/* hero section start */
+.hero {
+    background: var(--color-darkBlue);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 5rem !important;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+.bookDemo,
+.contactUs {
+    animation: floatIn 1.5s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bookDemo:hover,
+.contactUs:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.parallax-image {
+    animation: floatEffect 5s infinite ease-in-out, glowEffect 2s infinite alternate;
+    position: relative;
+    z-index: 10;
+    transform-origin: center;
+}
+
+/* Keyframe for floating motion */
+@keyframes floatEffect {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe for glowing effect */
+@keyframes glowEffect {
+    from {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+    }
+    to {
+        filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+    }
+}
+
+/* products section strat */
+.product{
+    background: var(--color-darkBlue);
+}
+.product .card{
+    background-color: var(--color-darkBg);
+}
+.active:hover{
+    background: var(--color-toRight);
+    border-radius: 10px;
+}
+
+.product .card h2{
+    color: var(--color-lightBlue);
+}
+
+.product .card p{
+    color: var(--color-white);
+}
+
+.product .prodRight{
+    box-shadow: var(--box-shadow) !important;
+}
+
+/* what we can do section start */
+.shape {
+    margin: 20px;
+    position: relative;
+}
+
+.doWithAi {
+    background: var(--color-darkBlue);
+    padding: 50px 0;
+}
+
+.doWithAi h1 {
+    font-size: 5rem !important;
+    margin-bottom: 30px;
+}
+
+.diamond {
+    width: 160px;
+    height: 160px;
+    background-color: transparent;
+    border: 2px solid #00C1D4;
+    transform: rotate(45deg);
+    position: relative;
+}
+  
+.circle {
+    width: 180px;
+    height: 180px;
+    background-color: transparent;
+    border: 2px solid #00C1D4;
+    border-radius: 50%;
+    position: relative;
+}
+
+.graphic .shape:nth-child(2) .diamond,
+.graphic .shape:last-child .diamond {
+    width: 190px;
+    height: 190px;
+    border-width: 3px;
+}
+
+.graphic .shape:nth-child(2) .circle,
+.graphic .shape:last-child .circle {
+    width: 190px;
+    height: 190px;
+    border-width: 3px;
+    border-radius: 50%;
+}
+
+.shape::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #00C1D4;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.graphic .shape:nth-child(1)::after{
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graphic .shape:nth-child(2)::after {
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graphic .shape:nth-child(3)::after {
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graphic .shape:nth-child(4)::after {
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graphic .shape:nth-child(5)::after {
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graphic .shape:nth-child(6)::after {
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.graphic .shape:nth-child(7)::after {
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 /* footer section */
 footer{
     background: var(--color-darkBlue) !important;
@@ -91,17 +332,8 @@ footer{
     padding-left: 0 !important;
 }
 
-footer .bookDemo{
-    background-color: var(--color-lightBlue);
-}
-
-footer .bookDemo:hover{
-    background: var(--color-toRight);
-}
-
 footer h1{
     margin-bottom: var(--spacing-medium) !important;
-    color: var(--color-lightBlue) !important;
     font-size: 3rem;
 }
 
@@ -136,6 +368,27 @@ footer form .btn{
 
 /* Footer section */
 @media (max-width: 1024px) {
+    .doWithAi h1 {
+        font-size: 4rem;
+    }
+
+    .diamond, .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .graphic .shape:nth-child(2) .diamond,
+    .graphic .shape:last-child .diamond {
+        width: 170px;
+        height: 170px;
+    }
+
+    .graphic .shape:nth-child(2) .circle,
+    .graphic .shape:last-child .circle {
+        width: 170px;
+        height: 170px;
+    }
+
     footer form {
         padding: var(--spacing-small);
         display: flex;
@@ -162,6 +415,27 @@ footer form .btn{
 }
 
 @media (max-width: 768px) {
+    .doWithAi h1 {
+        font-size: 3.5rem;
+    }
+
+    .diamond, .circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .graphic .shape:nth-child(2) .diamond,
+    .graphic .shape:last-child .diamond {
+        width: 160px;
+        height: 160px;
+    }
+
+    .graphic .shape:nth-child(2) .circle,
+    .graphic .shape:last-child .circle {
+        width: 160px;
+        height: 160px;
+    }
+
     footer form {
         padding: var(--spacing-small);
     }
@@ -178,6 +452,26 @@ footer form .btn{
 }
 
 @media (max-width: 480px) {
+    .doWithAi h1 {
+        font-size: 3rem;
+    }
+
+    .diamond, .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .graphic .shape:nth-child(2) .diamond,
+    .graphic .shape:last-child .diamond {
+        width: 140px;
+        height: 140px;
+    }
+
+    .graphic .shape:nth-child(2) .circle,
+    .graphic .shape:last-child .circle {
+        width: 140px;
+        height: 140px;
+    }
     footer h3.fs-1 {
         font-size: 1.5rem;
     }
