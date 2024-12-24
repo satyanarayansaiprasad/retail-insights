@@ -73,7 +73,6 @@
     <div class="container py-5 text-center">
         <h1> <span class="text-light">We</span> Do great with <span class="text-light">Ai.</span> </h1>
         <div class="graphic pt-5 d-flex justify-content-center">
-            <!-- Diamond and Circle Graphics -->
             <div class="shape d-flex flex-column position-relative align-items-center">
                 <div class="diamond position-absolute end-20"></div>
                 <span class="position-absolute text-light top-100">Lorem ipsum 1</span>
@@ -101,6 +100,101 @@
             <div class="shape d-flex flex-column position-relative align-items-center">
                 <div class="diamond position-absolute end-20"></div>
                 <span class="position-absolute text-light top-100 mt-5">Lorem ipsum 7</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- create a positive impact section -->
+<div class="cpi">
+    <div class="container py-5 text-center">
+        <h1> <span class="text-light">Create a </span> Positive Impact? </h1>
+        <div class="row position-relative mt-5">
+            <div class="col-lg-4 position-relative">
+                <div class="circle circle-top d-flex justify-content-center align-items-center text-center">
+                    <h6 class="text-light pb-5">CUSTOMER</h6>
+                </div>
+                <div class="circle circle-right d-flex justify-content-center align-items-center text-center">
+                    <h6 class="text-light">MARKET</h6>
+                </div>
+                <div class="circle circle-left d-flex justify-content-center align-items-center text-center">
+                    <h6 class="ms-5">CUSTOMER</h6>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <!-- Tabs Navigation -->
+                <ul class="nav justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item px-2" role="presentation">
+                        <button class="btn active text-light px-4" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true"> Lorem 1
+                        </button>
+                    </li>
+                    <li class="nav-item px-2" role="presentation">
+                        <button class="btn px-4 text-light" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false"> Lorem 2
+                        </button>
+                    </li>
+                    <li class="nav-item px-2" role="presentation">
+                        <button class="btn px-4 text-light" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false"> Lorem 3
+                        </button>
+                    </li>
+                    <li class="nav-item px-2" role="presentation">
+                        <button class="btn px-4 text-light" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false"> Lorem 4
+                        </button>
+                    </li>
+                    <li class="nav-item px-2" role="presentation">
+                        <button class="btn px-4 text-light" id="tab5-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab" aria-controls="tab5" aria-selected="false"> Lorem 5
+                        </button>
+                    </li>
+                </ul>
+                <hr class="mt-2 border-2" />
+                <!-- Tabs Content -->
+                <div class="tab-content mt-4">
+                    <!-- Tab 1 Content -->
+                    <div class="tab-pane fade show active text-center" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                    </div Tab 2 Content -->
+                    <div class="tab-pane fade text-center" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                    </div>
+
+                    <!-- Tab 3 Content -->
+                    <div class="tab-pane fade text-center" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                    </div>
+
+                    <!-- Tab 4 Content -->
+                    <div class="tab-pane fade text-center" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                    </div>
+
+                    <!-- Tab 5 Content -->
+                    <div class="tab-pane fade text-center" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                        <button class="btn m-2 p-3">Lorem</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -201,7 +201,7 @@ h1{
 .product .card{
     background-color: var(--color-darkBg);
 }
-.active:hover{
+.product .active:hover{
     background: var(--color-toRight);
     border-radius: 10px;
 }
@@ -318,6 +318,55 @@ h1{
     transform: translateX(-50%);
 }
 
+/* create a positive impact section start */
+.cpi{
+    background-color: var(--color-darkBlue);
+}
+
+.cpi hr{
+    width: 70%;
+    margin: auto;
+    color: var(--color-white) !important;
+}
+
+.circle-top {
+    height: 220px;
+    width: 220px;
+    background-color: var(--color-darkBlueTransparent);
+    border-color: var(--color-white);
+    left: 43%;
+    transform: translateX(-50%);
+}
+
+.circle-right {
+    height: 220px;
+    width: 220px;
+    background-color: var(--color-lightBlue);
+    z-index: 9;
+    left: -5%;
+    transform: translateY(-50%);
+}
+
+.circle-left {
+    height: 220px;
+    width: 220px;
+    background-color: var(--color-white);
+    bottom: 34%;
+    left: 39%;
+    transform: translateY(-50%);
+}
+
+.cpi .col-lg-8 .nav .btn{
+    background: var(--color-toBtm);
+    color: var(--color-white);
+}
+
+.cpi .tab-content .btn{
+    background: var(--color-lightBlue);
+    color: var(--color-white);
+    border-radius: 18px;
+}
+
 
 /* footer section */
 footer{
@@ -387,6 +436,14 @@ footer form .btn{
     .graphic .shape:last-child .circle {
         width: 170px;
         height: 170px;
+    }
+
+    .cpi .circle h4{
+        font-size: 16px !important;
+    }
+
+    .circle-right {
+        left: 22%;
     }
 
     footer form {
@@ -472,6 +529,7 @@ footer form .btn{
         width: 140px;
         height: 140px;
     }
+    
     footer h3.fs-1 {
         font-size: 1.5rem;
     }
