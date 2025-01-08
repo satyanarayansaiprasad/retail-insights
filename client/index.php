@@ -123,7 +123,6 @@
                 </div>
             </div>
             <div class="col-lg-8">
-                <!-- Tabs Navigation -->
                 <ul class="nav justify-content-center" id="myTab" role="tablist">
                     <li class="nav-item px-2" role="presentation">
                         <button class="btn active text-light px-4" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true"> Lorem 1
@@ -147,9 +146,7 @@
                     </li>
                 </ul>
                 <hr class="mt-2 border-2" />
-                <!-- Tabs Content -->
                 <div class="tab-content mt-4">
-                    <!-- Tab 1 Content -->
                     <div class="tab-pane fade show active text-center" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
@@ -157,7 +154,7 @@
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
-                    </div Tab 2 Content -->
+                    </div>
                     <div class="tab-pane fade text-center" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
@@ -166,8 +163,6 @@
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
                     </div>
-
-                    <!-- Tab 3 Content -->
                     <div class="tab-pane fade text-center" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
@@ -176,8 +171,6 @@
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
                     </div>
-
-                    <!-- Tab 4 Content -->
                     <div class="tab-pane fade text-center" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
@@ -185,8 +178,6 @@
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
                     </div>
-
-                    <!-- Tab 5 Content -->
                     <div class="tab-pane fade text-center" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
@@ -194,6 +185,98 @@
                         <button class="btn m-2 p-3">Lorem</button>
                         <button class="btn m-2 p-3">Lorem</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- discover section start -->
+ <div class="discover">
+    <div class="container py-5 ">
+        <div class="text-center">
+            <h1>
+                <span class="text-light">Discover the power of</span>
+                <br />
+                <span>AI Driven Commerce</span>
+            </h1>
+        </div>
+        <div class="box mt-4 p-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row-md-4 my-4 text-start text-light p-3 disBored">
+                        <h4>CUSTOMER</h4>
+                        <p>First round Funding</p>
+                        <p>First round Funding</p>
+                    </div>
+                    <div class="row-md-4 my-4 text-start text-light p-3 disBored">
+                        <h4>CUSTOMER</h4>
+                        <p>First round Funding</p>
+                        <p>First round Funding</p>
+                    </div>
+                    <div class="row-md-4 my-4 text-start text-light p-3 disBored">
+                        <h4>CUSTOMER</h4>
+                        <p>First round Funding</p>
+                        <p>First round Funding</p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="row-md-4 p-5 disBored">
+                        <p>Experience</p>
+                    </div>
+                    <div class="row-md-4 p-5 disBored">
+                        <p>Experience</p>
+                    </div>
+                    <div class="row-md-4 p-5 disBored">
+                        <p>Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row-md-4 d-flex flex-row justify-content-center align-items-center text-dark my-4 gap-3">
+                        <div class="p-5 disBored">
+                            <p>Workflow</p>
+                        </div>
+                        <div class="p-5 disBored">
+                            <p>Insights</p>
+                        </div>
+                        <div class="p-5 disBored">
+                            <p>Operations</p>
+                        </div>
+                    </div>
+                    <div class="row-md-4 text-dark my-4 p-5 disBored">
+                        <p>Industry Specific Enhancements & Customer Data Tuning</p>
+                    </div>
+                    <div class="row-md-4 text-dark my-4 p-5 disBored">
+                        <p>Foundational Generative Models</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- Recent popular insights section start -->
+<div class="RPI"></div>
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1>
+                <span class="text-light">Recent</span> Popular <span>Insights</span>
+            </h1>
+        </div>
+        <div class="pgm">
+            <div class="row p-3">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="client/assets/images/pgm.png" alt="product" />
+                </div>
+                <div class="col-lg-6">
+                    <h2 class>
+                        Publish, Grow <br />
+                        & Manage
+                    </h2>
+                    <p class="fs-4 text-light">Lorem ipsum dolor sit amet consectetur <br/> adipisicing elit.</p>
+                    <p class="fs-4 text-light">Maiores pariatur veritatis, illum, adipisci <br /> in minus neque iusto <br /> quisquam itaque eligendi iusto quisquam <br />  itaque eligendi</p>
+                    <p class="fs-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn-lg text-light bookDemo px-4 mt-5">Case study</a>
                 </div>
             </div>
         </div>

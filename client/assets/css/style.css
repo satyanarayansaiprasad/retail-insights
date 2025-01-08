@@ -11,8 +11,11 @@
     --color-darkBg: #253139;
     --color-toBtm: linear-gradient(to bottom, #021A2A, #02BFC2);
     --color-toRight: linear-gradient(to right, #021A2A, #02BFC2);
+    --color-tolefttobottomrightDarkLightBlue: linear-gradient(to bottom right, #0A5960, #13B1D4);
+    --color-tolefttobottomrightWhiteLightBlue: linear-gradient(to bottom right, #84D5E8 0%, #84D5E8 100%);
+    --color-toptobottomLightDarkBlue: linear-gradient(#7Af5ff, #1A9192);
+    --color-graygred: linear-gradient(to bottom right, #6D6D6D 0%, #010101 100%);
 
-  
     /* Spacing Variables */
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
@@ -39,6 +42,7 @@ html, body{
     width: 100%;
     line-height: 1.5;
     scroll-behavior: smooth;
+    background-color: var(--color-darkBlue) !important;
 }
 
 a{
@@ -195,9 +199,6 @@ h1{
 }
 
 /* products section strat */
-.product{
-    background: var(--color-darkBlue);
-}
 .product .card{
     background-color: var(--color-darkBg);
 }
@@ -225,7 +226,6 @@ h1{
 }
 
 .doWithAi {
-    background: var(--color-darkBlue);
     padding: 50px 0;
 }
 
@@ -319,10 +319,6 @@ h1{
 }
 
 /* create a positive impact section start */
-.cpi{
-    background-color: var(--color-darkBlue);
-}
-
 .cpi hr{
     width: 70%;
     margin: auto;
@@ -366,6 +362,55 @@ h1{
     color: var(--color-white);
     border-radius: 18px;
 }
+
+/* discover section start */
+.discover .box{
+    border: 1px solid #FFFFFF;
+    border-radius: var(--border-radius);
+}
+
+.box .row .col-md-3 .row-md-4:nth-child(1){
+    margin-bottom: 40px !important;
+}
+.box .row .col-md-3 .row-md-4:nth-child(2){
+    margin-bottom: 45px !important;
+}
+
+.discover .disBored{
+    border-radius: var(--border-radius) !important;
+}
+
+.discover .col-md-4 .row-md-4:nth-child(1), .discover .col-md-4 .row-md-4:nth-child(3){
+    background: var(--color-tolefttobottomrightDarkLightBlue);
+}
+
+.discover .col-md-4 .row-md-4:nth-child(2){
+    background: var(--color-tolefttobottomrightWhiteLightBlue);
+}
+
+.discover .col-md-3 .row-md-4{
+    background: var(--color-toptobottomLightDarkBlue);
+    color: var(--color-darkBlue);
+    font-weight: 600 !important;
+}
+
+.discover .col-md-5  .disBored{
+    background: var(--color-tolefttobottomrightWhiteLightBlue);
+    color: var(--color-darkBlue);
+    font-weight: 600 !important;
+}
+
+/* Recent popular insights section strat */
+.pgm{
+    background: var(--color-graygred);
+}
+
+.pgm h2{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #707070 !important;
+}
+
 
 
 /* footer section */
